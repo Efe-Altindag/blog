@@ -1,0 +1,130 @@
+.home{
+    padding: 0px 20px;
+}
+
+.home .wrapper {
+    margin: 50px auto;
+    width: 100%;
+    max-width: 1366px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+
+    background-color: #EFEFEFEF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+
+}
+.home .wrapper .content{
+    flex: 1;
+
+}
+.home .wrapper .content h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+
+    font-size: 1.8rem;
+    text-align:center
+    
+
+}
+.home .wrapper .content p {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing:none;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px;
+    font-size: 1.25rem;
+    line-height: 35px;
+    text-indent: 18px;
+    
+    
+}
+.home .wrapper .photo{
+    flex: 1;
+    
+}
+.photos{
+    width: 100%;
+    height:360px;
+    object-fit: cover;
+    border-radius: 10px;
+    max-width: 100%;
+    z-index: 2;
+}
+button{
+    z-index: 1;
+}
+/* responsive (not perfect) */
+@media (max-width: 878px) and (min-width: 601px) {
+    .home{
+        align-items: center;
+    }
+    .home .wrapper{
+        justify-content: center;
+        flex-direction: column;
+        margin: 30px auto;
+    }
+
+    .photos {
+        margin-left: 0; 
+        margin-top: 10px; 
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 600px) {
+    .home{
+        align-items: center;
+    }
+    .home .wrapper{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .home .wrapper .content p{
+        font-size: 1.1rem;
+    }
+
+    .photos {
+        margin-left: 0; 
+        margin-top: 10px; 
+        object-fit: cover;
+    }
+}
+@media (max-width:650px) and (min-width:415px){
+    .header h1{
+        font-size: 1.17rem;
+    }
+    .home .wrapper .content h1{
+        font-size: 1.4rem;
+    }
+    .home .wrapper .content p{
+        font-size: 1.1rem;
+        line-height: 28px;
+    }
+    .home .wrapper {
+        margin: 22px auto;
+    }
+
+}
+
+@media (max-width:414px){
+    .header h1{
+        font-size: 1.1rem;
+        
+    }
+    .home .wrapper .content h1{
+        font-size: 1.2rem;
+        
+    }
+    .home .wrapper .content p{
+        font-size: 0.9rem;
+        line-height: 24px;
+    }
+    .home .wrapper {
+        margin: 10px auto;
+    }
+
+}

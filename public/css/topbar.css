@@ -1,0 +1,73 @@
+
+/* ekran boyutu küçülünce bazı yazıların üstüne gelince de tıklanmıyor kayıyor onu tamamen çözemedim */
+.topbar {
+    background-color: white;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbar .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    padding: 10px;
+}
+
+.topbar a {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem; 
+    font-weight: 500; 
+    font-style: normal; 
+    display: block;
+    padding: 10px; 
+    margin: 0px 80px;
+}
+
+.topbar a:hover {
+    color: grey;
+}
+
+/* repsonsive (not perfect) */
+@media (max-width: 650px) and (min-width:401px) {
+    .topbar .menu {
+        flex-direction: row; 
+        justify-content: center;
+        width: 100%;
+    }
+
+    .topbar a {
+        margin: 0 4px;
+        font-size: 1.3rem;
+        
+    }
+}
+@media (max-width: 1080px) and (min-width:601px) {
+   .topbar .menu {
+       flex-direction: row; 
+       justify-content: center;
+       width: 100%;
+   }
+
+   .topbar a {
+       margin: 0 20px;
+   }
+}
+
+@media (max-width: 400px) {
+   .topbar .menu {
+       flex-direction: row; 
+       justify-content: center;
+       width: 100%;
+   }
+
+   .topbar a {
+       margin: 0 2px;
+       font-size: 1.2rem;
+   }
+}
+

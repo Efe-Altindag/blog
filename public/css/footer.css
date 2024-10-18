@@ -1,0 +1,19 @@
+.footer {
+    background-color: #EFEFEFEF;
+    text-align: center;
+    padding: 15px;
+    bottom: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+}
+
+@media (max-width:650px) and (min-width:415px){
+    footer p{
+        font-size: 0.82rem;
+    }
+
+}
+@media (max-width:414px){
+    footer p {
+        font-size: 0.74rem;
+    }
+}

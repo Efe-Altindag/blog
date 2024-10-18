@@ -1,0 +1,109 @@
+.projects{
+    padding: 0px 20px;
+}
+
+.projects .wrapper {
+    margin: 45px auto;
+    width: 100%;
+    max-width: 1366px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+
+    background-color: #EFEFEFEF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+
+}
+.projects .wrapper .content{
+    flex: 10;
+    
+}
+.projects .wrapper .content h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.3rem;
+    padding: 0px 15px;
+    
+
+}
+.projects .wrapper .content p {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px;
+    font-size: 1.25rem;
+    line-height: 30px;
+    text-indent: 20px;
+    
+}
+.projects .wrapper .icon{
+    flex: 2;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.icon {
+    padding: 0px 10px;
+    width: 100%;
+    margin: auto;
+    font-size: 2rem;
+    
+    
+}
+
+
+@media (max-width: 600px) {
+    .projects .wrapper {
+        margin: 20px auto;
+    }
+
+    .projects .wrapper .content p{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:650px) and (min-width:415px){
+    .projects .wrapper {
+        margin: 20px auto;
+    }
+
+    .projects .wrapper .content p{
+        font-size: 1.1rem;
+    }
+    .projects .wrapper .content h1{
+        font-size: 1.22rem;
+    }
+
+}
+
+@media (max-width:414px){
+    .projects .wrapper {
+        margin: 15px auto;
+    }
+
+    .projects .wrapper .content p{
+        font-size: 0.9rem;
+        line-height: 22px;
+    }
+    .projects .wrapper .content h1{
+        font-size: 1.05rem;
+    }
+
+}
+@media(max-width: 328px){
+.projects .wrapper {
+    margin: 15px auto;
+}
+
+.projects .wrapper .content p{
+    font-size: 0.8rem;
+    line-height: 22px;
+}
+.projects .wrapper .content h1{
+    font-size: 1.05rem;
+}
+}

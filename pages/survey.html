@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Anket Sayfası</title>
+</head>
+
+<div class="topbar" style="background-color: #EFE;" >
+    <div class="menu">
+            <a href="../index.html">ANASAYFA</a>
+            <a href="projects.html">PROJELER</a>
+            <a href="contact.html">ILETISIM</a>
+            <a href="survey.html">ANKET</a>
+    </div>
+</div>
+<div class="survey">
+    <div class="wrapper">
+        <div class="content">
+            <p></p>
+            <form action="https://formspree.io/f/xanyykon" method="POST" style="font-size: 125%;">
+                <h3><b>Anketi doldurursanız sevinirim.</b></h3><br>
+                <label for="name">Adınız:</label><br>
+                <input class="textBox" type="text" name="name" required><br>
+                <label for="surname">Mail adresiniz:</label><br>
+                <input class="textBox" type="email" name="email" required><br>
+                <label>Cinsiyet:</label><br>
+                <select name="gender" required>
+                    <option value="">Seçiniz..</option>
+                    <option value="male">Erkek</option>
+                    <option  value="female">Kadın</option>
+                </select><br><br>
+                <input type="radio" name="stiuation" value="student">
+                <label>Öğrenciyim</label><br>
+                <input type="radio" name="stiuation" value="employee">
+                <label>Çalışıyorum</label><br>
+                <input type="radio" name="stiuation" value="both">
+                <label>İkiside</label><br>
+                <input type="radio" name="stiuation" value="none">
+                <label>Hiçbiri</label><br><br>
+
+                <input type="checkbox" name="liked[]" value="home">
+                <label>Ana sayfayı beğendim </label><br>
+                <input type="checkbox" name="liked[]" value="projects">
+                <label">Projeler sayfasını beğendim</label><br>
+                <input type="checkbox" name="liked[]" value="contact">
+                <label>İletişim sayfasını beğendim.</label><br>
+                <input type="checkbox" name="liked[]" value="survey">
+                <label>Anket sayfasını beğendim.</label><br><br>
+
+                <p>Yazmak istediğiniz bir şey varsa:</p>
+
+                <textarea name="comments" placeholder="Geri dönüş gerekiyorsa mailinize yapılacaktır.."></textarea><br>
+                <!-- <input type="hidden" name="_next" value="../index.html" /> buraya githubdaki domainden anasayfa linkini gir value değerine -->
+
+                <button class="sendButton" type="submit">Gönder</button>
+              </form>
+        </div>
+
+    </div>
+</div>
+
+        
+    </div>
+       
+</div>
+<footer style="background-color: #EFE; color: rgb(0, 0, 0); text-align: center; padding: 15px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);">
+    <p>&copy; 2024 Ekim ayında son düzenleme yapıldı.</p>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
+
+
+</body>
+</html>

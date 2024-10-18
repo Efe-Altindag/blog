@@ -1,0 +1,97 @@
+.contact{
+    padding: 0px 20px;
+}
+
+.contact .wrapper {
+    margin: 45px auto;
+    width: 100%;
+    max-width: 1366px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+
+    background-color: #EFEFEF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+
+}
+.contact .wrapper .content{
+    flex: 10;
+    
+}
+.contact .wrapper .content h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+    
+
+}
+.contact .wrapper .content p {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px;
+    font-size: 1.25rem;
+    line-height: 30px;
+    
+}
+.contact .wrapper .icon{
+    flex: 2;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.icon {
+    padding: 0px 10px;
+    width: 100%;
+    margin: auto;
+    font-size: 2rem;
+    
+    
+}
+@media (max-width: 600px) {
+    .projects .wrapper {
+        margin: 20px auto;
+    }
+
+    .projects .wrapper .content p{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:650px) and (min-width:415px){
+    .contact .wrapper {
+        margin: 20px auto;
+    }
+
+    .contact .wrapper .content p{
+        font-size: 1.1rem;
+    }
+
+
+}
+
+@media (max-width:414px){
+    .contact .wrapper {
+        margin: 15px auto;
+    }
+
+    .contact .wrapper .content p{
+        font-size: 0.9rem;
+        line-height: 22px;
+    }
+}
+@media(max-width: 328px){
+.contact .wrapper {
+    margin: 15px auto;
+}
+
+.contact .wrapper .content p{
+    font-size: 0.8em;
+    line-height: 22px;
+}
+
+}
+

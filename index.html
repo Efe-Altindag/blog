@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Blog</title>
+
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <h1>Hoş Geldiniz!</h1>
+        <button class="close-button" onclick="closePopup()">Kapat</button>
+    </div>
+<div class="topbar">
+    <div class="menu">
+            <a href="index.html">ANASAYFA</a>
+            <a href="pages/projects.html">PROJELER</a>
+            <a href="pages/contact.html">ILETISIM</a>
+            <a href="pages/survey.html">ANKET</a>
+    </div>
+</div>
+
+<header class="header">
+    <h1>Blog Sayfam</h1>
+    <h2></h2>
+</header>
+
+<div class="home">
+    <div class="wrapper">
+       <div class="content">
+            <h1><b>Hakkımda</b></h1>
+            <p>
+               Ben Efe Düzce Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Kocaeli'den geldim aslen Boluluyum.
+               Bilgisayarla küçüklükten beri tanışıyorum ama genelde kullanıcı tarafındaydım artık yavaş yavaş geliştirici
+               kısmına geçmek istiyorum. Bilgisayar'da sorun olunca araştıra araştıra çözmek zevkli geliyor, aynı performansı
+               bu konuda da göstermek istiyorum.
+            </p>
+       </div>
+       <div class="photo">
+        <img src="public/img/background.jpg"
+        alt="" class="photos">
+       </div>    
+    </div>
+    <div class="wrapper">
+        <div class="content">
+             <h1><b>Kendini Geçmek</b></h1>
+             <p>
+                 Bir şeyler yaparken şu anki hâlimin en iyi yapabileceği şeyi yapmaya çalışıyorum, başkaları çok güzel diyebilir ama her zaman daha iyi olabilir. 
+                 Fotoğraf çekmeye meraklıyım ne kadar iyi kalitede çekemesem de sağdaki fotoğraf çektiklerimden birisi. Umudumu kaybetmezsem günün sonunun kendime göre
+                 iyi olabileceğini düşünüyorum.
+             </p>
+             
+        </div>
+        <div class="photo">
+            <img src="public/img/sunset.jpg" alt="" class="photos">
+        </div>    
+        
+    </div>
+    
+
+       
+</div>
+<footer class="footer">
+    <p>&copy; 2024 Ekim ayında son düzenleme yapıldı.</p>
+
+</footer>
+<!-- style="background-color: #EFEFEFEF; color: rgb(0, 0, 0); text-align: center; padding: 15px;" -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
+<script>
+    // popup while page opened
+    window.onload = function() {
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('popup').style.display = 'block';
+    };
+
+    // close popup
+    function closePopup() {
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('popup').style.display = 'none';
+    }
+</script>
+
+<script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menu = document.querySelector('.menu');
+
+    mobileMenu.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
