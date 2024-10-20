@@ -46,7 +46,7 @@
         
     }
 }
-@media (max-width: 1080px) and (min-width:601px) {
+@media (max-width: 1143px) and (min-width:601px) {
    .topbar .menu {
        flex-direction: row; 
        justify-content: center;
