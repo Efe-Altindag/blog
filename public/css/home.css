@@ -58,7 +58,7 @@ button{
     z-index: 1;
 }
 /* responsive (not perfect) */
-@media (max-width: 878px) and (min-width: 601px) {
+@media (max-width: 1143px) and (min-width: 601px) {
     .home{
         align-items: center;
     }
